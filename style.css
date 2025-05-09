@@ -1,0 +1,165 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f7f9;
+  color: #333;
+  padding: 0 20px;
+}
+
+header {
+  background-color: #282c34;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 5px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #61dafb;
+}
+
+section {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 0 10px;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  border-bottom: 3px solid #61dafb;
+  display: inline-block;
+  padding-bottom: 5px;
+  color: #282c34;
+}
+
+/* About Me */
+#about {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+/* Projects */
+#projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.project-card {
+  background: white;
+  padding: 20px;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0,0,0,0.15);
+}
+
+.project-title {
+  font-weight: 700;
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  color: #282c34;
+}
+
+.project-description {
+  color: #666;
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+.project-link {
+  text-decoration: none;
+  color: #61dafb;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.project-link:hover {
+  text-decoration: underline;
+}
+
+/* Skills */
+#skills ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  list-style: none;
+}
+
+#skills ul li {
+  background: #61dafb;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 25px;
+  font-weight: 600;
+  font-size: 1rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* Contact */
+#contact p {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+#contact a {
+  color: #61dafb;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+#contact a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  text-align: center;
+  padding: 20px 0;
+  font-size: 0.9rem;
+  color: #888;
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
